@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账号注册</title>
+</head>
+<body>
+<form action="/tag" method="post" >
+    <table>
+        <tbody>
+        <tr>
+            <td>用户名</td>
+            <td>
+                <input type="text" name ="User" value=""> <span style="color: red;"> {{.VerifyUser}} </span>
+            </td>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td>
+                <input type="password" name ="Pwd" value=""><span style="color: red;">{{.VerifyPwd}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td>确认密码</td>
+            <td>
+                <input type="password" name ="CfmPwd" value=""><span style="color: red;">{{.VerifyCfm}}</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>真实姓名</td>
+            <td>
+                <input type="text" name ="RealName" value=""><span style="color: red;">{{.VerifyRealName}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td>年龄</td>
+            <td>
+                <input type="text" name ="Age" value=""> <span style="color: #ff0000;">{{.VerifyAge}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td>身份证</td>
+            <td>
+                <input type="text" name ="IdCard" value=""> <span style="color: red;">{{.VerifyIdCard}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td>邮箱</td>
+            <td>
+                <input type="text" name ="Email" value=""> <span style="color: red;">{{.VerifyEmail}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td>手机</td>
+            <td>
+                <input type="text" name ="Tel" value=""> <span style="color: red;">{{.VerifyTel}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="确认">
+            </td>
+            <td>
+                <input type="reset" value="重置">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
